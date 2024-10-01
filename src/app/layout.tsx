@@ -1,4 +1,7 @@
 import "./styles/globals.css";
+import { inter } from "./fonts/inter";
+import { Header } from "./components/header";
+import { Footer } from "./components/footer";
 
 export default function RootLayout({
   children,
@@ -7,7 +10,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-gray-950 antialiased">{children}</body>
+      <body className={`${inter.variable} bg-gray-950 antialiased`}>
+        <div className="flex flex-col gap-6">
+          <Header />
+
+          {children}
+
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
