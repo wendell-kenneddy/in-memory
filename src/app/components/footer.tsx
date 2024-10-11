@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="w-11/12 max-w-[720px] mx-auto flex items-ceter justify-center text-gray-100/60">
+    <footer className="w-11/12 max-w-[720px] mb-6 text-sm mx-auto flex items-ceter justify-center text-gray-100/60">
       <span>
         Made by{" "}
         <Link
