@@ -10,9 +10,7 @@ export function Header() {
         </Link>
 
         <div className="flex items-center gap-1">
-          <Link href="/login">
-            <span className="font-medium text-gray-100/60 hover:text-gray-100">Login</span>
-          </Link>
+          <span className="font-medium text-gray-100/60 hover:text-gray-100">Login</span>
         </div>
       </div>
     </header>
