@@ -1,3 +1,4 @@
+import { Button } from "@radix-ui/themes";
 import Link from "next/link";
 
 export function GameMenu() {
@@ -10,12 +11,14 @@ export function GameMenu() {
         game.
       </p>
 
-      <p className="text-sm">Each few levels, the grid gets bigger, and the game harder.</p>
+      <p className="text-sm">
+        Each few levels, the grid grows and the pattern as well. Keep track of it!
+      </p>
 
       <Link href="/play" className="w-full">
-        <button className=" bg-teal-600 hover:bg-teal-400 transition-colors font-medium py-2 px-4 rounded-md flex items-center justify-center w-full max-w-[212px]">
+        <Button color="teal" size="3" className="w-full cursor-pointer">
           Play
-        </button>
+        </Button>
       </Link>
     </div>
   );
