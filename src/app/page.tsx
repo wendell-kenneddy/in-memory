@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { Tabs } from "./components/tabs";
 import { GameMenu } from "./components/game-menu";
-import { Leaderboard } from "./components/leaderboard";
+import { History } from "./components/history";
 
 export const metadata: Metadata = {
   title: "in.memory",
@@ -14,7 +14,7 @@ export default function Home() {
       <Tabs
         entries={[
           { value: "Play", component: <GameMenu /> },
-          { value: "Leaderboard", component: <Leaderboard /> },
+          { value: "History", component: <History /> },
         ]}
         defaultValue="Play"
       />
