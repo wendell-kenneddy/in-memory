@@ -8,5 +8,8 @@ const config: Config = {
   ],
   theme: {},
   plugins: [],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
 };
 export default config;
